@@ -1,3 +1,4 @@
+<%@ include file = "header.jsp" %>
 <%@ page import="com.group6.pro.service.KitchenServiceImpl" %>
 <%@ page import="com.group6.pro.model.Kitchens" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
@@ -9,6 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<title>Kitchen Menu</title>
   </head>
   <body>
@@ -18,3 +20,5 @@
   	%>
   </body>
 </html>
+
+<%@ include file = "footer.jsp" %>

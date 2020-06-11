@@ -1,16 +1,53 @@
+<%@ include file = "header.jsp" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Create an account</title>
 
       <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
       <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
+      <style type="text/css">
+      :root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+.form-signin {
+  width: 100%;
+s
+
+}
+
+.form-signin .btn {
+  background-color: #467ACA;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+      </style>
   </head>
 
   <body>
@@ -50,7 +87,7 @@
                 </div>
             </spring:bind>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+            <button class="form-signin .btn" type="submit">Register</button>
         </form:form>
 
     </div>
@@ -59,3 +96,4 @@
     <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
   </body>
 </html>
+<%@ include file = "footer.jsp" %>
